@@ -49,7 +49,7 @@ extra_args = []
 [build]
 # Which platforms to build. Comment out any you don't need --
 # each macOS job costs 10x its wall time against private-repo minutes.
-targets = ["windows", "macos-apple-silicon", "macos-intel"]
+targets = ["windows"]
 
 # How long to keep intermediate artifacts (release assets are unaffected).
 artifact_retention_days = 3
