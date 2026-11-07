@@ -1,0 +1,7 @@
+os
+openpyxl
+pandas
+smtplib
+mimetypes
+emailMessage
+analyticskiy
