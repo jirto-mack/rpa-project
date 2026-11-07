@@ -85,7 +85,6 @@ def create_invoice (invoice_num, order_data, directory):
 
     create_pdf(directory+'MasterInvoice.pdf', directory+f'Inovice {invoice_num}.pdf', order_data)
 
-create_invoice(8515, order_data, directory)
 # INSERT ANSWER FOR QUESTION 5 HERE
 def send_email (invoice_num, name, email, date, directory):
     # Enter your gmail user name and password
