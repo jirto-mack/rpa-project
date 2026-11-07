@@ -74,7 +74,7 @@ def get_order_data(invoice_num, filename, directory):
         order_dict['Price2'] = f'${product_prices[selected_sheet['B26'].value]:,.2f}'
         order_dict['Quantity2'] = str(selected_sheet["C26"].value)
         order_dict['Amount2'] = f'${product_prices[selected_sheet['B26'].value]*selected_sheet["C26"].value:,.2f}'
-        order_dict['Description2']= product_description[selected_sheet['B25'].value]
+        order_dict['Description2']= product_description[selected_sheet['B26'].value]
         total += product_prices[selected_sheet['B26'].value]*selected_sheet["C26"].value
 
     order_dict['Total'] = f'${total:,.2f}'
@@ -140,7 +140,6 @@ def send_email (invoice_num, name, email, date, directory):
     mail_server.send_message(message)
     mail_server.quit()
 
-send_email(8515, name, email, date, directory)
 filenames = os.listdir(directory)
 invoice_num = 8515
 for filename in filenames:
