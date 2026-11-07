@@ -4,4 +4,4 @@ pandas
 smtplib
 mimetypes
 emailMessage
-analyticskiy
+analyticskit
